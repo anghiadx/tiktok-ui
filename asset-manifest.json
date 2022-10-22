@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/tiktok-ui/static/css/main.ee3b9521.css",
-    "main.js": "/tiktok-ui/static/js/main.ec6a7ee8.js",
+    "main.js": "/tiktok-ui/static/js/main.21f91b9b.js",
     "static/js/787.fe00223f.chunk.js": "/tiktok-ui/static/js/787.fe00223f.chunk.js",
     "static/media/sofiapro-semibold.otf": "/tiktok-ui/static/media/sofiapro-semibold.a9a8148f7d5d0db20db8.otf",
     "static/media/sofiapro-bold.woff2": "/tiktok-ui/static/media/sofiapro-bold.1d7186488612ac20891f.woff2",
     "static/media/logo.svg": "/tiktok-ui/static/media/logo.c2712acdf3d779b25ef88e8e8bc249b5.svg",
     "index.html": "/tiktok-ui/index.html",
     "main.ee3b9521.css.map": "/tiktok-ui/static/css/main.ee3b9521.css.map",
-    "main.ec6a7ee8.js.map": "/tiktok-ui/static/js/main.ec6a7ee8.js.map",
+    "main.21f91b9b.js.map": "/tiktok-ui/static/js/main.21f91b9b.js.map",
     "787.fe00223f.chunk.js.map": "/tiktok-ui/static/js/787.fe00223f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ee3b9521.css",
-    "static/js/main.ec6a7ee8.js"
+    "static/js/main.21f91b9b.js"
   ]
 }
