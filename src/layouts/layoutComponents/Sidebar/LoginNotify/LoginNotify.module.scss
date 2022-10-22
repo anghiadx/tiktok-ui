@@ -1,0 +1,14 @@
+.login-notify {
+    padding: 20px 8px 24px;
+}
+.text {
+    line-height: 22px;
+    margin-bottom: 20px;
+    color: var(--text-gray-color2);
+}
+
+@media (max-width: 1071px) {
+    .login-notify {
+        display: none;
+    }
+}

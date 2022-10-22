@@ -1,0 +1,64 @@
+#loader {
+    position: relative;
+    left: calc(var(--circle-diameter) * -1);
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    width: 34px;
+
+    pointer-events: none;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+
+    --animation-duration: 0.9s;
+    --circle-diameter: 17.5px;
+    --circle-scale-percent: 0.2;
+
+    &.small {
+        --circle-diameter: 16.5px;
+    }
+}
+
+#loader:before,
+#loader:after {
+    content: ' ';
+    display: table-cell;
+    width: var(--circle-diameter);
+    height: var(--circle-diameter);
+    border-radius: 50%;
+    position: absolute;
+    animation-duration: var(--animation-duration);
+    animation-name: revolve;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    mix-blend-mode: darken;
+}
+
+#loader:before {
+    background: rgb(77, 232, 244);
+}
+
+#loader:after {
+    background: rgb(253, 62, 62);
+    animation-delay: calc(var(--animation-duration) / -2);
+}
+
+@keyframes revolve {
+    0% {
+        left: 0;
+    }
+    25% {
+        transform: scale(calc(1 + var(--circle-scale-percent)));
+    }
+    50% {
+        left: var(--circle-diameter);
+    }
+    75% {
+        transform: scale(calc(1 - var(--circle-scale-percent)));
+    }
+    100% {
+        left: 0;
+    }
+}

@@ -1,0 +1,55 @@
+.wrapper {
+    margin-bottom: 8px;
+}
+
+// nav-item
+.nav-item {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 8px;
+    border-radius: 4px;
+    color: currentColor;
+    transition: background-color ease-in-out 200ms;
+
+    &:hover {
+        background-color: var(--background-gray-color);
+    }
+
+    .icon-active {
+        display: none;
+    }
+
+    .title {
+        margin-left: 8px;
+        font-size: 1.8rem;
+    }
+}
+
+.icon,
+.icon-active {
+    font-size: 32px;
+    line-height: 0;
+}
+
+// When nav active
+.active {
+    color: var(--primary-color);
+
+    .icon {
+        display: none;
+    }
+    .icon-active {
+        display: block;
+    }
+}
+
+@media (max-width: 1071px) {
+    .nav-item {
+        justify-content: center;
+    }
+
+    .title {
+        display: none;
+    }
+}

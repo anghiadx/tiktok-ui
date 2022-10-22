@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: SofiaPro;
+    src: url('/assets/fonts/sofiapro-bold.woff2');
+}
+@font-face {
+    font-family: SofiaPro-Semibold;
+    src: url('/assets/fonts/sofiapro-semibold.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: rgba(254, 44, 85, 1); // FE2C55
+    --text-primary-color: #161823;
+    --text-gray-color: #161823bf;
+    --text-gray-color2: #16182380;
+    --black-color: black;
+    --white-color: white;
+
+    --default-background-media: #ddd; // Background of image, video when loading
+    --background-primary-color: rgba(254, 44, 85, 0.06);
+    --background-primary-color2: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #fe2c55;
+    --background-gray-color: rgba(22, 24, 35, 0.03);
+    --background-gray-color2: rgba(22, 24, 35, 0.1);
+    --background-gray-color3: rgba(22, 24, 35, 0.06);
+    --background-gray-color4: rgba(22, 24, 35, 0.12);
+    --background-gray-color5: rgba(22, 24, 35, 0.14);
+
+    --box-shadow-popper: rgb(0 0 0 / 12%) 0px 2px 12px;
+
+    // Size of layout component
+    --header-height: 60px;
+
+    // DOM breakpoint
+    --large-screen: 1071px;
+    --medium-screen: 767px;
+    --small-screen: 479px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    color: var(--text-primary-color);
+    // background-color: #ccc;
+    overflow-y: overlay;
+
+    &.hidden {
+        overflow: hidden;
+    }
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-primary-color);
+}
+
+img {
+    vertical-align: bottom;
+}
+
+.lh0 {
+    line-height: 0;
+}
+
+// Custom Tippy
+body {
+    .tippy-box {
+        background-color: rgba(84, 84, 84, 0.92);
+        border-radius: 8px;
+    }
+
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-box[data-placement^='bottom'] > .tippy-arrow:before {
+        top: -8px;
+    }
+
+    .tippy-content {
+        padding: 8px;
+        line-height: 22px;
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+}
+
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: var(--background-gray-color3);
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}

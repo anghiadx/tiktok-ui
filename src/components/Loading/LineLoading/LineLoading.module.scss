@@ -1,0 +1,24 @@
+.wrapper {
+    overflow: hidden;
+    width: 208px;
+    height: 24px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    background: rgb(241, 241, 241);
+}
+
+.loading-bar {
+    width: 120px;
+    height: 24px;
+    background: linear-gradient(90deg, rgba(22, 24, 35, 0) 0%, rgba(22, 24, 35, 0.06) 50.52%, rgba(22, 24, 35, 0) 100%);
+    animation: 1.5s cubic-bezier(0, 0, 1, 1) 0s infinite normal none running loading-animate;
+}
+
+@keyframes loading-animate {
+    0% {
+        transform: translateX(-240px);
+    }
+    100% {
+        transform: translateX(328px);
+    }
+}

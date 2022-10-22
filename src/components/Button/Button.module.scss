@@ -1,0 +1,137 @@
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 36px;
+    padding: 0 8px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-color);
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    user-select: none;
+
+    + .btn {
+        margin-left: 16px;
+    }
+}
+
+.icon {
+    line-height: 0;
+}
+
+.icon + .text,
+.text + .icon {
+    margin-left: 8px;
+}
+
+// button type
+.primary,
+.outline {
+    background-color: var(--white-color);
+}
+
+.primary {
+    min-width: 110px;
+    padding: 0 16px;
+    border-color: rgba(22, 24, 35, 0.12);
+    border-radius: 2px;
+
+    &:hover {
+        background-color: var(--background-gray-color);
+    }
+}
+
+.color {
+    min-width: 100px;
+    line-height: 22px;
+
+    background-color: var(--primary-color);
+    color: var(--white-color);
+
+    &:hover {
+        background: var(--background-primary-color2);
+    }
+}
+
+.outline {
+    min-height: 28px;
+    min-width: 88px;
+    padding: 0 10px;
+    font-weight: 500;
+    color: var(--primary-color);
+    border-color: currentColor;
+
+    &:hover {
+        background-color: var(--background-primary-color);
+    }
+}
+
+.rounded {
+    border-radius: 9999px;
+}
+
+// size
+
+.xsmall {
+    &.primary {
+        min-width: 0;
+        max-width: 100%;
+        min-height: 0;
+        max-height: 24px;
+        padding: 3px 10px;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: var(--text-gray-color);
+        border-color: rgba(22, 24, 35, 0.2);
+    }
+
+    .icon {
+        font-size: 16px;
+        color: var(--text-primary-color);
+    }
+
+    .text {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .icon + .text {
+        margin-left: 6px;
+    }
+}
+
+.small {
+    &.primary {
+        min-height: 32px;
+        min-width: 90px;
+        padding: 0 8px;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: var(--text-gray-color);
+
+        &:hover {
+            border-color: rgba(22, 24, 35, 0.2);
+            background-color: var(--white-color);
+        }
+    }
+}
+
+.large {
+    min-height: 48px;
+
+    &.outline {
+        min-width: 168px;
+        width: 100%;
+        padding: 6px 8px;
+        font-weight: 600;
+        font-size: 1.8rem;
+    }
+}
+
+.disable {
+    opacity: 0.5;
+    pointer-events: none;
+}

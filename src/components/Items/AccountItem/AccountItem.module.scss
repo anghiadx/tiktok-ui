@@ -1,0 +1,116 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 8px;
+    border-radius: 4px;
+    color: inherit;
+    cursor: pointer;
+    transition: background-color 200ms ease-in-out 0s;
+
+    &:hover {
+        background-color: var(--background-gray-color);
+    }
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: var(--default-background-media);
+}
+.body {
+    margin-left: 12px;
+    overflow: hidden;
+}
+
+.username,
+.name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.username {
+    margin-top: -2px;
+    max-width: 260px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.name {
+    line-height: 15px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--text-gray-color);
+}
+
+// Popper
+
+.preview-account {
+    width: 320px !important;
+    padding: 20px !important;
+}
+
+.preview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+
+    .avatar {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+.preview-body {
+    color: var(--pimary-color);
+
+    .username {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    .name {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: inherit;
+    }
+}
+
+.preview-footer {
+    margin-top: 8px;
+    line-height: 20px;
+    font-size: 1.7rem;
+
+    .user-status {
+        margin-right: 6px;
+    }
+
+    .user-status-title {
+        color: var(--text-gray-color);
+    }
+
+    .user-status-title + .user-status {
+        margin-left: 12px;
+    }
+    .bio {
+        padding-top: 16px;
+        margin-top: 16px;
+        border-top: 1px solid var(--background-gray-color4);
+        font-size: 1.4rem;
+    }
+}
+
+// Repnsive
+@media (max-width: 1071px) {
+    .wrapper {
+        justify-content: center;
+    }
+    .body {
+        display: none;
+    }
+    .preview-container {
+        display: none;
+    }
+}

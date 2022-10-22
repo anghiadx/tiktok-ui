@@ -1,0 +1,44 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    padding: 9px 16px;
+    cursor: pointer;
+    color: inherit;
+
+    &:hover {
+        background-color: var(--background-gray-color);
+    }
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.body {
+    margin-left: 12px;
+    overflow: hidden;
+}
+
+.username,
+.name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.username {
+    font-weight: 600;
+    line-height: 22px;
+}
+.tick {
+    color: #20d5ec;
+    font-size: 14px;
+    margin-left: 6px;
+}
+.name {
+    color: var(--text-gray-color2);
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 20px;
+}

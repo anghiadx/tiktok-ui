@@ -1,0 +1,21 @@
+.wrapper {
+    padding: 16px 0;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 8px;
+        right: 8px;
+        height: 1px;
+        transform: scaleY(0.5);
+        background-color: var(--background-gray-color4);
+    }
+}
+
+@media (max-width: 1071px) {
+    .wrapper {
+        padding: 8px 0;
+    }
+}

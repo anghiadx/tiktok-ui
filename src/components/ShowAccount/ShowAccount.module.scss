@@ -1,0 +1,30 @@
+.wrapper {
+    --padding-spacer: 8px;
+}
+
+.title {
+    line-height: 20px;
+    color: var(--text-gray-color);
+    padding: var(--padding-spacer);
+    padding-top: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.see-more-btn {
+    display: block;
+    padding: var(--padding-spacer);
+    padding-bottom: 0;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+@media (max-width: 1071px) {
+    .title,
+    .see-more-btn {
+        display: none;
+    }
+}

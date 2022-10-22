@@ -1,0 +1,123 @@
+// Search container
+
+.search-container {
+    width: var(--search-container-width);
+    height: 46px;
+    background-color: rgba(22, 24, 35, 0.06);
+    border-radius: 92px;
+    display: flex;
+    color: rgba(22, 24, 35, 0.34);
+    overflow: hidden;
+    border: 1px solid transparent;
+
+    &:focus-within {
+        border: 1px solid #c5c6c9;
+    }
+
+    input {
+        flex-grow: 1;
+        background-color: transparent;
+        font-weight: 400;
+        padding-left: 12px;
+        caret-color: rgba(254, 44, 85, 1);
+
+        &:placeholder-shown ~ .search-icon-wrapper {
+            display: none;
+        }
+
+        &:not(:placeholder-shown) ~ .search-btn {
+            color: rgba(22, 24, 35, 0.75);
+        }
+    }
+}
+
+.search-icon-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    position: absolute;
+    color: rgba(22, 24, 35, 0.34);
+    animation: spinner 0.9s linear infinite;
+}
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.clear-btn {
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.search-btn {
+    width: var(--search-btn-width);
+    height: 100%;
+    font-size: 1.8rem;
+    padding: 11px 16px 11px 12px;
+    color: inherit;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+
+    &:active {
+        background-color: rgba(22, 24, 35, 0.06);
+    }
+
+    &::after {
+        content: '';
+        width: 1px;
+        height: var(--search-btn-after-height);
+        position: absolute;
+        left: 0;
+        top: calc((var(--search-container-height) - var(--search-btn-after-height)) / 2);
+        transform: translateX(-100%);
+        background-color: rgba(22, 24, 35, 0.12);
+    }
+}
+
+.search-result {
+    width: var(--search-container-width);
+    max-height: min((100vh - 96px) - 60px, 734px);
+}
+
+.search-result__title {
+    height: 30px;
+    line-height: 22px;
+    padding: 5px 12px;
+    color: var(--text-gray-color2);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.search-result__see-full {
+    line-height: 22px;
+    padding: 15px 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--background-gray-color);
+    }
+}
+
+// Reponsive
+
+@media (max-width: 798px) {
+    .search-container {
+        display: none;
+    }
+}

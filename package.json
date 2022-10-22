@@ -1,0 +1,62 @@
+{
+    "name": "tiktok",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "https://anghiadx.github.io/tiktok-ui",
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^6.1.1",
+        "@fortawesome/free-regular-svg-icons": "^6.1.1",
+        "@fortawesome/free-solid-svg-icons": "^6.1.1",
+        "@fortawesome/react-fontawesome": "^0.2.0",
+        "@testing-library/jest-dom": "^5.16.4",
+        "@testing-library/react": "^13.3.0",
+        "@testing-library/user-event": "^13.5.0",
+        "@tippyjs/react": "^4.2.6",
+        "axios": "^0.27.2",
+        "babel-plugin-macros": "^3.1.0",
+        "classnames": "^2.3.1",
+        "normalize.css": "^8.0.1",
+        "react": "^18.2.0",
+        "react-custom-scrollbars": "^4.2.1",
+        "react-dom": "^18.2.0",
+        "react-intersection-observer": "^9.4.0",
+        "react-router-dom": "^6.3.0",
+        "react-scripts": "5.0.1",
+        "serve": "^14.0.1",
+        "tippy.js": "^6.3.7",
+        "web-vitals": "^2.1.4"
+    },
+    "devDependencies": {
+        "babel-plugin-module-resolver": "^4.1.0",
+        "customize-cra": "^1.0.0",
+        "react-app-rewired": "^2.2.1",
+        "sass": "^1.53.0"
+    },
+    "scripts": {
+        "start": "react-app-rewired start",
+        "build": "react-app-rewired build",
+        "test": "react-app-rewired test",
+        "eject": "react-scripts eject",
+        "serve": "serve -s build",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}

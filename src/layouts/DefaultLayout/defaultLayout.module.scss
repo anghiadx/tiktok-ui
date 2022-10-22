@@ -1,0 +1,19 @@
+.wrapper {
+    --layout-width: 1150px;
+}
+.container {
+    max-width: var(--layout-width);
+    // min-height: 1000px;
+    margin: 0 auto;
+    margin-top: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+
+    .content {
+        flex: 1 1;
+        max-width: 692px;
+        padding: 24px 0;
+        margin: 0 16px;
+        // border: 1px solid;
+    }
+}
